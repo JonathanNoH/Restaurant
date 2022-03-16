@@ -1,11 +1,16 @@
 header > img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
 }
 
 header {
     display: flex;
     align-items: center;
+}
+
+.sidebar {
+    display: flex;
+    gap: 1rem;
 }
 
 #content {
