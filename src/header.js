@@ -23,6 +23,7 @@ const createHeader = () => {
     const addTab = (string) => {
         const tab = document.createElement('div');
         tab.innerText = string;
+        tab.classList.add(string.toLowerCase());
         sidebar.appendChild(tab);
     }
     addTab('Home');

@@ -1,10 +1,8 @@
 import './style.css';
-import Icon from './icon.png';
 
 const content = document.querySelector('#content');
 
 const goHome = () => {
-    
     //add testimonials
     const testimonials = document.createElement('div');
     testimonials.classList.add('testimonials');
