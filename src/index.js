@@ -17,3 +17,10 @@ mainTitle.innerText = "Jim and Bob's Jellys and Burgers";
 header.appendChild(mainTitle);
 
 content.appendChild(header);
+
+//add testimonials
+const testimonials = document.createElement('div');
+testimonials.classList.add('testimonials');
+testimonials.innerText = "Some of the best damn burgers I've ever had. My jelly was just squirting everywhere. -Jimmy (no relation)"
+
+content.appendChild(testimonials);
