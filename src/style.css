@@ -7,3 +7,20 @@ header {
     display: flex;
     align-items: center;
 }
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+#content > div {
+    align-self: center;
+    padding: 1rem 3rem;
+    max-width: 70ch;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
