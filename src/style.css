@@ -2,3 +2,8 @@ header > img {
     width: 200px;
     height: 200px;
 }
+
+header {
+    display: flex;
+    align-items: center;
+}
