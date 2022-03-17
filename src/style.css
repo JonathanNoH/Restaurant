@@ -69,6 +69,7 @@ header {
     flex: 1;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     font-family: 'Raleway';
     background-color: var(--off-white);
 }
@@ -94,8 +95,10 @@ header {
 .menuHeader {
     position: sticky;
     top: 0;
+    width: 100%;
     background-color: var(--off-white);
     display: flex;
+    justify-content: center;
     gap: 1rem;
     font-size: 1.5rem;
 }
