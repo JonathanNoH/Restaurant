@@ -19,17 +19,25 @@ body {
 
 /* Header */
 
+.container {
+    flex: 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-blue);
+}
+
 header > img {
     width: 250px;
     height: 250px;
 }
 
 header {
-    flex: 0;
-    display: flex;
+    min-width: 35ch;
+    max-width: 70ch;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18ch, 1fr));
     gap: 1rem;
-    align-items: center;
-    background-color: var(--main-blue);
+    place-items: center;
     font-family: 'Raleway', 'Times New Roman', Times, serif;
     font-size: 2rem;
     font-weight: 900;
@@ -124,6 +132,8 @@ header {
     width: 100%;
     background-color: var(--off-white);
     display: flex;
+    overflow: auto;
+    white-space: nowrap;
     justify-content: center;
     gap: 1rem;
     font-size: 1.5rem;
