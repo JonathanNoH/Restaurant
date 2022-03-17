@@ -19,15 +19,16 @@ const goMenu = () => {
 
     //add section headers
     const menuSection = document.createElement('div');
-    menuSection.classList.add('menuSection');
+    menuSection.classList.add('menuArea');
     const createSection = (string) => {
         const section = document.createElement('div');
+        section.classList.add('menuSection');
         addSection(string, section);
         return section;
     }
     const addSection = (string, section) => {
-        section.id = string.toLowerCase().trim();
         const sectionHeader = document.createElement('div');
+        sectionHeader.classList.add('menuSectionHeader');
         sectionHeader.innerText = string;
         section.appendChild(sectionHeader);
         menuSection.appendChild(section);
@@ -52,7 +53,7 @@ const goMenu = () => {
     //add menu items
     const addMenuItem = (item, description, section) => {
         const menuItemDiv = document.createElement('div');
-        
+        menuItemDiv.classList.add('menuItem');
         const itemNameDiv = document.createElement('div');
         itemNameDiv.innerText = item;
         menuItemDiv.appendChild(itemNameDiv);
@@ -68,12 +69,18 @@ const goMenu = () => {
     //burgers
     addMenuItem('The Burg', 'A classic burger loaded with all the fixings plus a healthy serving of our seasonal jelly.', burgersSection);
     addMenuItem('The Baron Von Burgermeister', 'The regal burger: bacon, lettuce, tomato, grilled onions, garlic aioli, and truffle jelly.', burgersSection);
+    addMenuItem('The BurgTown', 'A triple burger surrounded by a sampling of appetizers.', burgersSection);
+    addMenuItem('The Mystery Burger', 'A mystery meat with a mystery jelly. Guess the jelly and you are entered in a monthly draw for a 200$ voucher!', burgersSection);
     addMenuItem('The Veg Burg', 'The classic burger with a veggie patty and no cheese', burgersSection);
 
     //sides
     addMenuItem('Fries and Jelly', 'Steak cut fries served with tomato-based jelly.', sidesSection);
+    addMenuItem('Onion Rings', 'Onion Rings with a choice of dip.', sidesSection);
 
     //desserts
+    addMenuItem('Berries & Cream', 'A creamy jelly infused with vanilla. Topped with fresh, seasonal berries.', jelliesSection);
+    addMenuItem('The Mystery Jelly', 'A mystery flavour jelly. Guess it and you are entered in a monthly draw for a 200$ voucher!', jelliesSection);
+    addMenuItem('The Iceburg', 'A slushie drink with your choice of jelly flavour. Topped with a mini burger.', jelliesSection);
 
     //append to content
     content.appendChild(topBar);
