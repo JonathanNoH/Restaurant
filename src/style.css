@@ -79,6 +79,11 @@ header {
     min-width: 35ch;
 }
 
+.contentHeader {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 .testimonials {
     display: flex;
     flex-direction: column;

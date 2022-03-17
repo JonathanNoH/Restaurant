@@ -6,6 +6,10 @@ const goHome = () => {
     //add testimonials
     const testimonials = document.createElement('div');
     testimonials.classList.add('testimonials');
+    const testimonialHeader = document.createElement('div');
+    testimonialHeader.classList.add('contentHeader');
+    testimonialHeader.innerText = "Testimonials";
+    testimonials.appendChild(testimonialHeader);
 
     const addTestimonial = (string) => {
         const testimonial = document.createElement('div');
