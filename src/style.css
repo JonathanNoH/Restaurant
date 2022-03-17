@@ -43,11 +43,13 @@ header {
     border-radius: 0.5rem;
 }
 
-.sidebar > div {
+.sidebar > div,
+.menuHeader > div {
     cursor: pointer;
     position: relative;
 }
-.sidebar > div::after {
+.sidebar > div::after,
+.menuHeader > div::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -60,7 +62,8 @@ header {
 
     transition: transform 0.3s;
 }
-.sidebar > div:hover::after {
+.sidebar > div:hover::after,
+.menuHeader > div:hover::after {
     transform: scaleX(1);
 }
 
