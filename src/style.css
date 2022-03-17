@@ -91,7 +91,7 @@ header {
 }
 
 .contentHeader {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
 }
 
@@ -103,6 +103,19 @@ header {
     gap: 1.5rem;
 }
 
+.testimonial {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonialBody {
+    font-size: 1.25rem;
+}
+
+.testimonialAuthor {
+    margin-left: auto;
+    font-weight: 600;
+}
 /* menu page */
 
 .menuHeader {
