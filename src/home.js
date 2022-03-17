@@ -16,6 +16,7 @@ const goHome = () => {
     addTestimonial("Well I guess it was fine. -Remy");
     addTestimonial("I asked for a burger with no jelly and they kicked me out. I came back the next day though and got a burger with jelly. They were right to kick me out before -- I'll never have a burger without jelly again! -Anonymous");
     addTestimonial("Better than the Krabby Patty -Gary");
+    addTestimonial("I sure got some jelly in my burg! -Baron von Jellington")
 
     content.appendChild(testimonials);
 }
