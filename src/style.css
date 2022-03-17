@@ -3,8 +3,12 @@
     --main-pink: #f5afbb;
 }
 @font-face {
-    font-family: 'Raleway';
-    src: url('./Raleway-VariableFont_wght.ttf') format('ttf');
+    font-family: 'ralewaythin';
+    src: url('./raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('./raleway-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 header > img {
@@ -19,7 +23,7 @@ header {
     background-color: var(--main-blue);
     font-family: 'Raleway', 'Times New Roman', Times, serif;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 900;
     color: var(--main-blue);
 }
 
@@ -56,6 +60,7 @@ header {
 #content {
     display: flex;
     flex-direction: column;
+    font-family: 'Raleway';
 }
 
 #content > div {
